@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //Button Style starts here
+    <style name="buttonStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@color/buttonWhite</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:onClick">btnSelectedEvent</item>
+    </style>
+
+    <style name="operationButton" parent="buttonStyle">
+        <item name="android:background">@color/buttonOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:onClick">btnOperationEvent</item>
+    </style>
+
+    <style name="equalButton" parent="buttonStyle">
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+    //Button Style ends here
+
+</resources>
