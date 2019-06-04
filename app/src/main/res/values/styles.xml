@@ -16,6 +16,7 @@
         <item name="android:textSize">25sp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:onClick">btnSelectedEvent</item>
+        <item name="android:layout_marginRight">1dp</item>
     </style>
 
     <style name="operationButton" parent="buttonStyle">
@@ -25,6 +26,65 @@
     </style>
 
     <style name="equalButton" parent="buttonStyle">
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+    //Button Style ends here
+
+    //HDPI Button Style starts here
+    <style name="hdpiButtonStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@color/buttonWhite</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:onClick">btnSelectedEvent</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+    <style name="hdpiOperationButton" parent="hdpiButtonStyle">
+        <item name="android:background">@color/buttonOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:onClick">btnOperationEvent</item>
+    </style>
+
+    <style name="hdpiEqualButton" parent="hdpiButtonStyle">
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+    //Button Style ends here
+
+    //LDPI Button Style starts here
+    <style name="ldpiButtonStyle" parent="hdpiButtonStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="ldpiOperationButton" parent="ldpiButtonStyle">
+        <item name="android:background">@color/buttonOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:onClick">btnOperationEvent</item>
+    </style>
+
+    <style name="ldpiEqualButton" parent="ldpiButtonStyle">
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+    //Button Style ends here
+
+    //MDPI Button Style starts here
+    <style name="mdpiButtonStyle" parent="hdpiButtonStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="mdpiOperationButton" parent="mdpiButtonStyle">
+        <item name="android:background">@color/buttonOrange</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:onClick">btnOperationEvent</item>
+    </style>
+
+    <style name="mdpiEqualButton" parent="mdpiButtonStyle">
         <item name="android:background">@color/darkOrange</item>
         <item name="android:textColor">@color/textWhite</item>
     </style>

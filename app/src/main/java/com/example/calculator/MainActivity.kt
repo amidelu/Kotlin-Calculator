@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.widget.LinearLayoutCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -80,6 +81,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
         etShowData.setText(finalNumber.toString())
+        isClear = true
+    }
+
+    fun btnPercentEvent (view:View) {
+        val number:Double = etShowData.text.toString().toDouble() / 100
+        etShowData.setText(number.toString())
+    }
+
+    fun btnClear (view: View){
+        etShowData.setText("0")
         isClear = true
     }
 }
